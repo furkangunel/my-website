@@ -1,0 +1,60 @@
+.posts {
+    flex: 9;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.posts .post {
+    width: calc(50% - 20px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:1100px){
+    .posts .post {
+        width: 100%;
+    }
+}
+
+.posts h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.posts img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.posts p {
+    font-family: 'Arvo', serif;
+    padding: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;
+}
+
+.posts .AuthorAndDate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.posts .AuthorAndDate span:nth-child(1) {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.posts .AuthorAndDate span:nth-child(2) {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+}

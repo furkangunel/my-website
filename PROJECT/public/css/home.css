@@ -1,0 +1,29 @@
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0px 10px;
+}
+
+.home .wrapper {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.home .wrapper .ph{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.home .wrapper .ph img{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.home .wrapper .ph img:hover{
+    transform: scale(1.2);
+}

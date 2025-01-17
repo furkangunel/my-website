@@ -1,0 +1,79 @@
+.contact {
+    position: relative;
+}
+
+.contact img {
+    width: 100%;
+    height: calc(100vh - 50px);
+    object-fit: cover;
+}
+
+.contact form {
+    position: absolute;
+    width: 300px;
+    left: calc((100% - 300px) / 2);
+    top: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact form .Group {
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contact form .Group span{
+    position: absolute;
+    color: white;
+    left: 10px;
+    top: 12px;
+    transition: all 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact form .Group input:focus~span,
+.contact form .Group input:valid~span,
+.contact form .Group textarea:focus~span,
+.contact form .Group textarea:valid~span {
+    top: -12px;
+    left: 20px;
+    font-size: 0.85rem;
+}
+
+.contact form .Group input, .contact form .Group textarea{
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact form .Group textarea{
+    resize: none;
+    height: 100px;
+}
+
+.contact form .btnGroup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact form .btnGroup button{
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;  /*16px*/
+    background-color: rgba(113, 113, 113, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}

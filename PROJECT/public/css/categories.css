@@ -1,0 +1,52 @@
+.home .markalar h1{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.home .markalar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .marka{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: solid 3px #888;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px 0px;
+}
+
+.home .marka a{
+    margin-left: 10px;
+}
+
+.home .marka span{
+    font-family: 'Arvo', serif;
+    font-size: 32px;
+}
+.home .marka h4{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 24px;
+}
+
+.home .marka p{
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+
+.home .markalar .marka img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid grey 1px;
+    transition: all 0.3s ease;
+}
+
+.home .markalar .marka img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

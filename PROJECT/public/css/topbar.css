@@ -1,0 +1,137 @@
+.topbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fff;
+}
+
+.topbar .wrapper{
+    width: 100%;
+    display: flex;
+    max-width: 1366px;
+}
+
+.topbar .left, .topbar .right{
+    flex: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topbar .left i{
+    font-size: 1.3rem;
+}
+
+.topbar .center{
+    flex: 8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topbar .right span img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.topbar .right .searchEngine{
+    width: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.topbar .right .searchEngine i{
+    position: absolute;
+    right: 0px;
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.topbar .right .searchEngine input{
+    width: 100%;
+    margin-right: 20px;
+    height: 25px;
+    border-radius: 3px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.topbar .right .searchEngine.active{
+    width: 70%;
+}
+
+.topbar .right .searchEngine.active input{
+    opacity: 1;
+}
+
+.topbar .left img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.topbar .dropdown {
+    position: relative;
+}
+
+.topbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.topbar .dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.topbar .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 14px;
+}
+
+.topbar .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+.topbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.topbar .center a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.topbar .center a:hover {
+    color: #007BFF;
+}

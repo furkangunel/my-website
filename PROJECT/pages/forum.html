@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome cdn-->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="wrapper">
+            <div class="left">
+                <img src="../public/img/home/logo.jpg" alt="logo">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-pinterest"></i>
+            </div>
+            <div class="center">
+                <a href="../index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <div class="dropdown">
+                    <a href="#">DRONES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../pages/dropdown_menu/categories.html">Categories</a></li>
+                        <li><a href="../pages/dropdown_menu/reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <a href="#">FORUM</a>
+                <a href="login.html">LOGIN</a>
+                <a href="register.html">REGISTER</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="right">
+                <span>
+                    <img src="../public/img/user/user-1.jpg" alt="user">
+                </span>
+                <div class="searchEngine" id="searchEngine">
+                    <input type="text" placeholder="Aramak istediğiniz kelimeyi yazın">
+                    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+
+        <div class="forum">
+            
+            <div class="addpost">
+
+                <form>
+
+                    <div class="group">
+                        <textarea name="baslik" id="baslik" minlength="10" required></textarea>
+                        <span id="header">Header</span>
+                    </div>
+                    
+                    <div class="group">
+                        <textarea name="posta" id="posta" minlength="10" required></textarea>
+                        <span id="text">Text</span>
+                    </div>
+    
+                    <div class="buton">
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="posts">
+
+                <div class="post">
+                    <div class="banner">
+                        <img src="../public/img/user/girl1.png" alt="joker">
+                    </div>
+                    <p>Lena</p>
+                    <div class="baslik">
+                        <h1>Bataryanın çok ısınması</h1>
+                    </div>
+                    <div class="metin">
+                        <p>Drone'umu şarj ederken bataryanın çok ısındığını fark ettim. Bu normal mi yoksa bataryayı değiştirmem gerekir mi? Uzun vadede bir sorun yaşamak istemiyorum.</p>
+                    </div>
+                    <div class="reactions">
+                        <i class="fa-regular fa-thumbs-up like-button"></i>
+                        <i class="fa-regular fa-comments"></i>
+                        <!-- <i class="fa-solid fa-thumbs-up"></i>  //tıkladıktan sonra bu olacak. -->
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="banner">
+                        <img src="../public/img/user/man1.png" alt="joker">
+                    </div>
+                    <p>Lukas</p>
+                    <div class="baslik">
+                        <h1>Yetersiz Işık</h1>
+                    </div>
+                    <div class="metin">
+                        <p>Drone'umla gece çekimlerine başladım ama ışık yetersiz olduğunda görüntü kalitesi düşüyor. Düşük ışıkta daha net çekim yapmak için hangi filtreleri kullanabilirim?</p>
+                    </div>
+                    <div class="reactions">
+                        <i class="fa-regular fa-thumbs-up like-button"></i>
+                        <i class="fa-regular fa-comments"></i>
+                        <!-- <i class="fa-solid fa-thumbs-up"></i>  //tıkladıktan sonra bu olacak. -->
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="banner">
+                        <img src="../public/img/user/girl2.png" alt="joker">
+                    </div>
+                    <p>Clara</p>
+                    <div class="baslik">
+                        <h1>Katlanabilir Pervane</h1>
+                    </div>
+                    <div class="metin">
+                        <p>Drone'u taşıma çantasında taşırken pervaneler zarar görebiliyor. Katlanabilir pervane koruyucuları kullanmaya başladım ve artık çok daha rahat taşıyorum.</p>
+                    </div>
+                    <div class="reactions">
+                        <i class="fa-regular fa-thumbs-up like-button"></i>
+                        <i class="fa-regular fa-comments"></i>
+                        <!-- <i class="fa-solid fa-thumbs-up"></i>  //tıkladıktan sonra bu olacak. -->
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="banner">
+                        <img src="../public/img/user/man2.png" alt="joker">
+                    </div>
+                    <p>Max</p>
+                    <div class="baslik">
+                        <h1>Kış aylarında drone uçurmak</h1>
+                    </div>
+                    <div class="metin">
+                        <p>Kışın drone uçururken pil performansı çok düşüyor. Şimdi pil ısıtıcı kılıf deniyorum ve oldukça işe yarıyor. Soğuk havada uçuş yapmak isteyenlere öneririm.</p>
+                    </div>
+                    <div class="reactions">
+                        <i class="fa-regular fa-thumbs-up like-button"></i>
+                        <i class="fa-regular fa-comments"></i>
+                        <!-- <i class="fa-solid fa-thumbs-up"></i>  //tıkladıktan sonra bu olacak. -->
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="banner">
+                        <img src="../public/img/user/girl3.png" alt="joker">
+                    </div>
+                    <p>Emma</p>
+                    <div class="baslik">
+                        <h1>Gürültülü</h1>
+                    </div>
+                    <div class="metin">
+                        <p>Drone'um havada çok gürültü çıkarıyor ve bu bazen çevrede rahatsızlık yaratıyor. Daha sessiz bir pervane ya da çözüm öneriniz var mı?</p>
+                    </div>
+                    <div class="reactions">
+                        <i class="fa-regular fa-thumbs-up like-button"></i>
+                        <i class="fa-regular fa-comments"></i>
+                        <!-- <i class="fa-solid fa-thumbs-up"></i>  //tıkladıktan sonra bu olacak. -->
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="banner">
+                        <img src="../public/img/user/man3.png" alt="joker">
+                    </div>
+                    <p>Aiden</p>
+                    <div class="baslik">
+                        <h1>Hafiflik</h1>
+                    </div>
+                    <div class="metin">
+                        <p>Daha uzun süreli uçuş yapmak için batarya kapasitelerini artırmak yerine, hafif materyallerden üretilmiş bir model arıyorum. Hafiflik performansı olumlu etkiliyor.</p>
+                    </div>
+                    <div class="reactions">
+                        <i class="fa-regular fa-thumbs-up like-button"></i>
+                        <i class="fa-regular fa-comments"></i>
+                        <!-- <i class="fa-solid fa-thumbs-up"></i>  //tıkladıktan sonra bu olacak. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="area">
+                <h3>Trend Topics</h3>
+                <!-- <img src="../public/img/home/d2.jpg" alt="user"> -->
+                <div class="box">
+                    <span>How US Prepares World’s Most Feared Spy Drone For Extreme Mission</span>
+                    <br>
+                    <div class="link">
+                        <a href="https://www.youtube.com/watch?v=BHcAhp3su1g" target="_blank">
+                            <img src="../public/img/home/drone1.jpg" alt="drone1">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Shenzhen Celebrates Chinese National Day with Mesmerizing Drone-Performing Light Show</span>
+                    <br>
+                    <div class="link">
+                        <a href="https://www.youtube.com/watch?v=n3gevG5KVL0" target="_blank">
+                            <img src="../public/img/home/drone2.jpg" alt="drone2">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Flying Drones in the Mining Industry</span>
+                    <br>
+                    <div class="link">
+                        <a href="https://www.youtube.com/watch?v=HG_TRNfAycY" target="_blank">
+                            <img src="../public/img/home/drone3.jpg" alt="drone3">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <span>Search and Rescue Drone locates missing person using thermal imaging camera.</span>
+                    <br>
+                    <div class="link">
+                        <a href="https://www.youtube.com/watch?v=3BoyazBkIk4" target="_blank">
+                            <img src="../public/img/home/drone4.jpg" alt="drone4">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <span>Drone delivery assists urban logistics in China's Shenzhen</span>
+                    <br>
+                    <div class="link">
+                        <a href="https://www.youtube.com/watch?v=IAuoJqegAb8" target="_blank">
+                            <img src="../public/img/home/drone5.jpg" alt="drone5">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../public/js/search.js"></script>
+    <script src="../public/js/like.js"></script>
+</body>
+
+</html>
